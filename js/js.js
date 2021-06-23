@@ -25,12 +25,12 @@ $(document).ready(function() {
 
 
     $('#formulario').on("click", function() {
-        location.href = "../portafolio/Formulario/index.html"
+        location.href = "../portafolio/formulario/index.html"
 
     });
 
     $('#resta').on("click", function() {
-        location.href = "../portafolio/Restaurante/index.html"
+        location.href = "../portafolio/restaurante/index.html"
 
     });
     $('#startup').on("click", function() {
