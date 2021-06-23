@@ -25,20 +25,20 @@ $(document).ready(function() {
 
 
     $('#formulario').on("click", function() {
-        location.href = "../portafolio/formulario/index.html"
+        location.href = "../formulario/index.html"
 
     });
 
     $('#resta').on("click", function() {
-        location.href = "../portafolio/restaurante/index.html"
+        location.href = "../restaurante/index.html"
 
     });
     $('#startup').on("click", function() {
-        location.href = "../portafolio/startup/index.html"
+        location.href = "../startup/index.html"
 
     });
     $('#dado').on("click", function() {
-        location.href = "../portafolio/dado/index.html"
+        location.href = "../dado/index.html"
 
     });
 
