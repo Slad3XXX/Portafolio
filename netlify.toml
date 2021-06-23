@@ -2,22 +2,22 @@
   from = "/"
   to = "/startup/"
   status = 301
-  force = true
+  
 
 [[redirects]]
   from = "/"
   to = "/dado/"
   status = 301
-  force = true
+  
 
 [[redirects]]
   from = "/"
   to = "/restaurante/"
   status = 301
-  force = true
+ 
 
 [[redirects]]
   from = "/"
   to = "/formulario/"
   status = 301
-  force = true
+ 
