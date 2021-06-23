@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "/startup/"
-  status = 301
-  force = true

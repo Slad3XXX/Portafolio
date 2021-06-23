@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://use.fontawesome.com/e5d6586074.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styless.css">
+    <title>Forumulario</title>
+</head>
+
+<body>
+
+    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header" style="background-color: #BB26A3">
+            <div class="row">
+                <div class="col-10">
+                    <h3>Formulario</h3>
+                </div>
+                <div class="col-2">
+                    <i class="fa fa-tasks fa-lg"></i>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span><img src="images/clock.svg" alt=""> En menos de 5 minutos</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-body text-secondary">
+            <form class="uno" id="uno">
+                <div class="mb-3 row">
+
+
+
+
+                    <div class="col-2">
+                        <i class="fa fa-smile-o fa-lg"></i>
+
+                    </div>
+
+                    <div class="col-10">
+                        <h2>¿Cuál es tu nombre?</h2>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" type="text" placeholder="Nombre" id="nombre" onchange="timer()">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" type="text" placeholder="Segundo Nombre" id="nombre2">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" type="text" placeholder="Apellido Paterno" id="paterno">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" type="text" placeholder="Apellido Materno" id="materno">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <div class="alert alert-primary" role="alert" id="mensaje1" style="background-color: #BB26A3; color: white;">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">
+            <form class="dos" id="dos">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-smile-o fa-lg"></i>
+
+                    </div>
+
+                    <div class="col-10">
+                        <h2>¿Cuál es tu fecha de nacimiento?</h2>
+                        <div class="form-group">
+                            <select class="form-control form-control-sm" id="dia">
+                    <option value="" selected disabled>Dia</option>
+                    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+                  </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <select class="form-control form-control-sm" id="mes">
+                            <option value="" selected disabled>Mes</option>
+                            <option>Enero</option>
+                            <option>Febrero</option>
+                            <option>Marzo</option>
+                            <option>Abril</option>
+                            <option>Mayo</option>
+                            <option>Junio</option>
+                            <option>Julio</option>
+                            <option>Agosto</option>
+                            <option>Septiembre</option>
+                            <option>Octubre</option>
+                            <option>Noviembre</option>
+                            <option>Diciembre</option>
+                          </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <select class="form-control form-control-sm" id="anio">
+                            <option value="" selected disabled>Año</option>
+                            <option>1921</option>
+    <option>1922</option><option>1923</option><option>1924</option><option>1925</option><option>1926</option><option>1927</option><option>1928</option>
+    <option>1929</option><option>1930</option><option>1931</option><option>1932</option><option>1933</option><option>1934</option>
+    <option>1935</option><option>1936</option><option>1937</option><option>1938</option><option>1939</option><option>1940</option>
+    <option>1941</option><option>1942</option><option>1943</option><option>1944</option><option>1945</option><option>1946</option>
+    <option>1947</option><option>1948</option><option>1949</option><option>1950</option><option>1951</option><option>1952</option>
+    <option>1953</option><option>1954</option><option>1955</option><option>1956</option><option>1957</option><option>1958</option>
+    <option>1959</option><option>1960</option><option>1961</option><option>1962</option><option>1963</option><option>1964</option>
+    <option>1965</option><option>1966</option><option>1967</option><option>1968</option><option>1969</option><option>1970</option>
+    <option>1971</option><option>1972</option><option>1973</option><option>1974</option><option>1975</option><option>1976</option><option>1977</option><option>1978</option>
+    <option>1979</option><option>1980</option><option>1981</option><option>1982</option><option>1983</option><option>1984</option><option>1985</option><option>1986</option>
+    <option>1987</option><option>1988</option><option>1989</option><option>1990</option><option>1991</option><option>1992</option>
+    <option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option>
+    <option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option>
+    <option>2009</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option>
+    <option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option>               
+      </select>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <div class="alert alert-primary" role="alert" id="mensaje2" style="background-color: #BB26A3; color: white;">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">
+
+            <form class="tres" id="tres">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-smile-o fa-lg"></i>
+
+                    </div>
+
+                    <div class="col-10">
+                        <h2>Datos de Contacto</h2>
+
+                        <div class="form-group"> <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp" placeholder="Correo Electrónico"></div>
+
+
+                        <div class="form-group col-10">
+                            <input class="form-control form-control-sm" type="number" placeholder="Teléfono Celular" id="telefono">
+                        </div>
+                    </div>
+            </form>
+            </div>
+            <div class="card-footer">
+                <div class="alert alert-primary" role="alert" id="mensaje3" style="background-color: #BB26A3; color: white;">
+
+                </div>
+                <div id="validacion" class="invisible">
+                    <p>Si tus datos son correctos por favor continuemos</p>
+
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-danger invisible" id="final" style="text-align: center;" style="margin: auto;">Iniciar</button>
+                </div>
+                <div class="alert alert-primary invisible" role="alert" id="mensajef" style="background-color: #BB26A3; color: white;">
+
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            // Timer para mas de 5 minutos 
+            // function timer() {
+            //    t = setTimeout(function() {
+            //         alert("Ya pasaron mas de 5 minutos");
+            //     }, 300001);
+            // }
+            $("#nombre").change(function() {
+                $("#mensaje1").html($(this).val());
+
+            });
+            $("#nombre2").change(function() {
+                $("#mensaje1").html($("#nombre").val() + " " + $(this).val());
+            });
+            $("#paterno").change(function() {
+                $("#mensaje1").html($("#nombre").val() + " " + ($("#nombre2").val()) + " " + $(this).val());
+            });
+            $("#materno").change(function() {
+                $("#mensaje1").html($("#nombre").val() + " " + ($("#nombre2").val()) + " " + ($("#paterno").val()) + " " + $(this).val());
+
+
+
+            });
+
+            $("#dia").change(function() {
+                $("#mensaje2").html($(this).val());
+            });
+            $("#mes").change(function() {
+                $("#mensaje2").html($("#dia").val() + " " + $(this).val());
+            });
+            $("#anio").change(function() {
+                $("#mensaje2").html($("#dia").val() + " " + ($("#mes").val()) + " " + $(this).val());
+
+
+
+            });
+
+            $("#email").change(function() {
+                $("#mensaje3").html($(this).val());
+            });
+
+            $("#telefono").change(function() {
+                $("#mensaje3").html($("#email").val() + " " + $(this).val());
+
+                $("#validacion").removeClass("invisible");
+
+                $("#final").removeClass("invisible");
+            });
+
+
+            // FINAL
+            $("#final").click(function() {
+
+                // clearTimeout(t); Se pararia el temporizador
+                $("#mensajef").removeClass("invisible");
+                $("#mensajef").text("Fecha de Nacimiento: " + $("#dia").val() + " " + $("#mes").val() + " " + $("#anio").val() + "\r\nCorreo Electronico:" + " " + $("#email").val() + "\r\nTelefono Celular:" + " " + $("#telefono").val() + "\r\nNombre:" + " " + $("#nombre").val() + " " + $("#nombre2").val() + " " + $("#paterno").val() + " " + $("#materno").val());
+
+
+            });
+        </script>
+</body>
+
+</html>

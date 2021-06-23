@@ -2,3 +2,18 @@
   from = "/"
   to = "/startup/"
   status = 301
+
+[[redirects]]
+  from = "/"
+  to = "/dado/"
+  status = 301
+
+[[redirects]]
+  from = "/"
+  to = "/restaurante/"
+  status = 301
+
+[[redirects]]
+  from = "/"
+  to = "/formulario/"
+  status = 301
